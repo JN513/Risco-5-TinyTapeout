@@ -5,7 +5,8 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = project.v memory.v gpio.v gpios.v core/alu_control.v core/alu.v core/control_unit.v core/csr_unit.v core/mux.v core/pc.v core/registers.v \
+	core/immediate_generator.v core/core.v
 
 ifneq ($(GATES),yes)
 
